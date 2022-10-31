@@ -33,6 +33,15 @@ const getDesignTokens = (mode: PaletteMode) => ({
           },
         }),
   },
+  breakpoints: {
+    values: {
+      xs: 0,
+      sm: 600,
+      md: 1050,
+      lg: 1328,
+      xl: 1536,
+    },
+  },
 })
 
 export default getDesignTokens
