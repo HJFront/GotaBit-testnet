@@ -5,14 +5,28 @@ import { Container } from '@mui/material'
 import Footer from 'src/components/Footer'
 import Navbar from 'src/components/Navbar'
 import Content from 'src/components/Content'
+import Head from 'next/head'
 
 const Home: NextPage = () => {
   return (
-    <Container maxWidth="lg">
-      <Navbar />
-      <Content />
-      <Footer />
-    </Container>
+    <>
+      <Head>
+        <title>GotaBit Test Network</title>
+      </Head>
+      <Container
+        maxWidth="lg"
+        sx={{
+          display: 'flex',
+          minHeight: '100vh',
+          flexDirection: 'column',
+          justifyContent: 'space-between',
+        }}
+      >
+        <Navbar />
+        <Content />
+        <Footer />
+      </Container>
+    </>
   )
 }
 

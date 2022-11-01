@@ -48,7 +48,14 @@ const Content = () => {
   ]
 
   return (
-    <Box position="relative" component="div" marginBottom={['64px', '150px']}>
+    <Box
+      component="div"
+      sx={{
+        position: 'relative',
+        mb: ['24px', '110px'],
+        mt: ['24px', '36px', 0],
+      }}
+    >
       <Box>
         <Title>{t('GotaBit Test Network')}</Title>
         <Box
@@ -77,6 +84,7 @@ const Content = () => {
                   sx={{
                     textDecoration: 'none',
                     color: '#0B1B42',
+                    display: 'block',
                   }}
                   target="_blank"
                   rel="noopener"
@@ -84,8 +92,8 @@ const Content = () => {
                   <CardItm>
                     <Box
                       sx={{
-                        width: '70px',
-                        height: '70px',
+                        width: '80px',
+                        height: '80px',
                       }}
                     >
                       {item.component}

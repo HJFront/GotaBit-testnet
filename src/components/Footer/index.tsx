@@ -13,6 +13,7 @@ const Footer = () => {
         flexDirection: ['column', 'row'],
         justifyContent: 'space-between',
         alignItems: 'center',
+        py: '40px',
       }}
     >
       <Typography sx={{ mb: ['24px', '24px', 0] }}>
