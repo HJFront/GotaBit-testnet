@@ -15,7 +15,9 @@ const Footer = () => {
         alignItems: 'center',
       }}
     >
-      <Typography>{t('2022  © Powered By Gotabit')}</Typography>
+      <Typography sx={{ mb: ['24px', '24px', 0] }}>
+        {t('2022  © Powered By Gotabit')}
+      </Typography>
       <ContactIcons />
     </Box>
   )
